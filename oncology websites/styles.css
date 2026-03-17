@@ -1,0 +1,57 @@
+body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f0f8ff; /* AliceBlue */
+        margin: 0;
+        padding: 0;
+        background-image: url('https://th.bing.com/th/id/R.e2fe28680682dbe3e86570c313f6c188?rik=dy5B6DMiRl%2f5Bg&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fdna-png-hd-genetic-data-string-concept-of-a-blue-double-helix-dna-molecule-seamless-3d-animation-loop-motion-background-videoblocks-1920.png&ehk=wmxtKytkkKa5osXOkvmtW0qlygXXzX6vI81l8zKBM1k%3d&risl=&pid=ImgRaw&r=0');
+    }
+    
+    header {
+        background-color: #20b2aa; /* LightSeaGreen */
+        color: white;
+        text-align: center;
+        padding: 1em;
+    }
+    
+    nav {
+        margin: 20px;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    li {
+        margin: 10px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #0f0f0fc9; /* Teal */
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: larger;
+    }
+
+    li:hover {
+        background-color: #aaf; /* Set the background color for hover state */
+    }
+    
+    @media only screen and (max-width: 600px) {
+        /* Styles for devices with a screen width of 600 pixels or less */
+        body {
+            background-color: #add8e6; /* LightBlue */
+        }
+    }
+    
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        /* Styles for devices with a screen width between 601px and 1024px */
+        body {
+            background-color: #98fb98; /* PaleGreen */
+        }
+    }
+    
+    /* Add more media queries for other devices as needed */
+    
+    
