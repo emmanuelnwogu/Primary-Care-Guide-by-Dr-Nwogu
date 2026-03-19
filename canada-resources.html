@@ -99,84 +99,289 @@
         margin-top: 15px;
         border-radius: 6px;
     }
-</style>
+
+    #backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;   /* ensures bottom-right */
+        z-index: 999;
+        font-size: 18px;
+        background-color: #34e26e;   /* light grey like your screenshot */
+        color: #333;
+        border: none;
+        border-radius: 50%;
+        padding: 10px 12px;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        display: none;   /* hidden until scroll */
+        }
+
+    #backToTop {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        #backToTop:hover {
+        background-color: #ddd;
+        }
+
+    
+    </style>
 </head>
 
 <body>
 
-<header>
-    <h1 class="page-title">
-        Canada Resources
-        <span class="subtitle">compiled by Dr Nwogu</span>
-    </h1>
+    <header>
+        <h1 class="page-title">
+            Canada Resources
+            <span class="subtitle">compiled by Dr Nwogu</span>
+        </h1>
 
-    <div class="nav-container">
+        <div class="nav-container">
 
-        <!-- Column 1 -->
-        <div class="nav-column">
-            <h3>Clinical Pathways</h3>
-            <ul>
-                <li><a href="https://pathwaysbc.ca/login" target="_blank">Pathways.ca</a></li>
-            </ul>
+            <!-- Column 1 -->
+            <div class="nav-column">
+                <h3>Clinical Pathways</h3>
+                <ul>
+                    <li><a href="https://pathwaysbc.ca/login" target="_blank">Pathways.ca</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="nav-column">
+                <h3>Lifestyle</h3>
+                <ul>
+                    <li><a href="https://www.lifestylerx.io" target="_blank">LifestyleRx</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="nav-column">
+                <h3>System Access</h3>
+                <ul>
+                    <li><a href="#">PowerChart</a></li>
+                    <li><a href="https://medinet.ca/pharmanet/" target="_blank">PharmaNet</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="nav-column">
+                <h3>Professional</h3>
+                <ul>
+                    <li><a href="https://www.doctorsofbc.ca/" target="_blank">Doctors of BC</a></li>
+                    <li><a href="https://www.bcfamilydocs.ca" target="_blank">BC Family Doctors</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 5 -->
+            <div class="nav-column">
+                <h3>Guidelines</h3>
+                <ul>
+                    <li><a href="https://www.uptodate.com/login" target="_blank">UpToDate</a></li>
+                    <li><a href="https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/bc-guidelines" target="_blank">BC Guidelines</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 6 -->
+            <div class="nav-column">
+                <h3>Prescribing</h3>
+                <ul>
+                    <li><a href="https://www.bugsanddrugs.org/" target="_blank">Bugs & Drugs</a></li>
+                </ul>
+            </div>
+
         </div>
-
-        <!-- Column 2 -->
-        <div class="nav-column">
-            <h3>Lifestyle</h3>
-            <ul>
-                <li><a href="https://www.lifestylerx.io" target="_blank">LifestyleRx</a></li>
-            </ul>
-        </div>
-
-        <!-- Column 3 -->
-        <div class="nav-column">
-            <h3>System Access</h3>
-            <ul>
-                <li><a href="#">PowerChart</a></li>
-                <li><a href="https://medinet.ca/pharmanet/" target="_blank">PharmaNet</a></li>
-            </ul>
-        </div>
-
-        <!-- Column 4 -->
-        <div class="nav-column">
-            <h3>Professional</h3>
-            <ul>
-                <li><a href="https://www.doctorsofbc.ca/" target="_blank">Doctors of BC</a></li>
-                <li><a href="https://www.bcfamilydocs.ca" target="_blank">BC Family Doctors</a></li>
-            </ul>
-        </div>
-
-        <!-- Column 5 -->
-        <div class="nav-column">
-            <h3>Guidelines</h3>
-            <ul>
-                <li><a href="https://www.uptodate.com/login" target="_blank">UpToDate</a></li>
-                <li><a href="https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/bc-guidelines" target="_blank">BC Guidelines</a></li>
-            </ul>
-        </div>
-
-        <!-- Column 6 -->
-        <div class="nav-column">
-            <h3>Prescribing</h3>
-            <ul>
-                <li><a href="https://www.bugsanddrugs.org/" target="_blank">Bugs & Drugs</a></li>
-            </ul>
-        </div>
-
-    </div>
-</header>
+    </header>
 
 <main>
 
     <div class="section">
         <h2>COPD Diagnosis and Management(BC Guidelines)</h2>
-        <img src="Canada Resources\COPD Diagnosis and Treatment.png" alt="Image here">
-        <img src="Canada Resources\COPD nonpharmacologicals.png" alt="Image here">
-        <img src="Canada Resources\COPD antibiotics.png" alt="Image here">
+        <img src="Canada Resources\COPD management.png" alt="Image here">
+        <img src="Canada Resources\Building Blocks of Non-pharmacological Care-COPD.png" alt="Image here">
+        <img src="Canada Resources\Antibiotic treatment-COPD.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Asthma Management 6-11 years (BC Guidelines)</h2>
+        <img src="Canada Resources\asthma-6 to 11 years.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Asthma Management 12-17 years (BC Guidelines)</h2>
+        <img src="Canada Resources\asthma- 12 to 17 years.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Asthma Management in Adults (BC Guidelines)</h2>
+        <img src="Canada Resources\asthma adult.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Suspected Sleep Apnoea Pathway(BC Guidelines)</h2>
+        <img src="Canada Resources\sleep apnoea pathway.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Diagnosis of Hypertension (BC Guidelines)</h2>
+        <img src="Canada Resources\Hypertension diagnosis.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Management of Hypertension (BC Guidelines)</h2>
+        <img src="Canada Resources\Hypertension mgt.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Hypertension Management- Comorbities (BC Guidelines)</h2>
+        <img src="Canada Resources\Pharmacologic treatment recommendations of hypertension complicated by co-morbidity.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Type II Diabetes Management (BC Guidelines)</h2>
+        <img src="Canada Resources\Management of Type 2 Diabetes.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Type II Diabetes- Reviewing, Adjusting or Advancing therapy in Type 2 Diabetes (BC Guidelines)</h2>
+        <img src="Canada Resources\Reviewing, Adjusting or Advancing therapy in Type 2 Diabetes.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Type II Diabetes- Starting or Advancing Insulin in Type 2 Diabetes (BC Guidelines)</h2>
+        <img src="Canada Resources\Starting or Advancing Insulin in Type 2 Diabetes.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Type II Diabetes- Recommandations for Glycemic Targets (adapted from Diabetes Canada) (BC Guidelines)</h2>
+        <img src="Canada Resources\Recommandations for Glycemic Targets (adapted from Diabetes Canada).png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Type II Diabetes- Screening and Diagnosis for CKD in Diabetes (BC Guidelines)</h2>
+        <img src="Canada Resources\Screening and Diagnosis for CKD in Diabetes.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Heart Failure- Reduced Ejection Fraction (LVEF ≤ 40%) (BC Guidelines)</h2>
+        <img src="Canada Resources\Heart Failure with Reduced Ejection Fraction.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Heart Failure- Mildly Reduced Ejection Fraction (EF 41-49%) and Heart Failure with Preserved Ejection Fraction (EF ≥ 50%) (BC Guidelines)</h2>
+        <img src="Canada Resources\Heart failure with mildly reduced EF or preserved EF.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Heart Failure- Palliative Care (BC Guidelines)</h2>
+        <img src="Canada Resources\Palliative care in Heart failure.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Frailty Scoring Tools (BC Guidelines)</h2>
+        <img src="Canada Resources\Frailty Scoring.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Vitamin B12 deficiency Algorithm (BC Guidelines)</h2>
+        <img src="Canada Resources\Vitamin B12 Deficiency Algorithm.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Diagnostic Workup of Acute Diarrhea (BC Guidelines)</h2>
+        <img src="Canada Resources\Diagnostic workup of acute diarrhea.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Acute Diarrhea-Indications for Antimicrobial Treatment (BC Guidelines)</h2>
+        <img src="Canada Resources\Summary of clinical presentation and indications for antimicrobial treatment.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Palliative Care-Cancer Pain (BC Guidelines)</h2>
+        <img src="Canada Resources\cancer pain-palliative care.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Palliative Care-Constipation (BC Guidelines)</h2>
+        <img src="Canada Resources\Constipation Management Algorithm-Palliative Care.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Palliative Care-Delirium (BC Guidelines)</h2>
+        <img src="Canada Resources\Delirium-palliative care.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Palliative Care-Depression (BC Guidelines)</h2>
+        <img src="Canada Resources\Depression-palliative care.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Palliative Care-Dyspnoea (BC Guidelines)</h2>
+        <img src="Canada Resources\Dyspnoea-palliative care.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Palliative Care-Fatigue and Weakness (BC Guidelines)</h2>
+        <img src="Canada Resources\fatigue and weakness-palliative care.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Palliative Care-Nausea and Vomiting (BC Guidelines)</h2>
+        <img src="Canada Resources\Nausea and vomiting-palliative care.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Osteoporosis and Fragility Fracture Risk (BC Guidelines)</h2>
+        <img src="Canada Resources\Osteoporosis and fragility fracture risk.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Osteoporosis Assessment (CMAJ)</h2>
+        <img src="Canada Resources\Osteoporosis Assessment-CMAJ.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Osteoporosis Treatment (CMAJ)</h2>
+        <img src="Canada Resources\Osteoporosis Treatment-CMAJ.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Acute Stroke and TIA Assessment and Management in Primary Care (BC Guidelines)</h2>
+        <img src="Canada Resources\Acute Stroke and TIA Assessment and Management in Primary Care.png" alt="Image here">
+    </div>
+
+    <div class="section">
+        <h2>Microscopic Haematuria (BC Guidelines)</h2>
+        <img src="Canada Resources\Microscopic Haematuria.png" alt="Image here">
     </div>
 
 
-</main>
+    </main>
+
+        <button id="backToTop" title="Back to top">↑</button>
+
+        <script>
+            const btn = document.getElementById("backToTop");
+
+            window.addEventListener("scroll", function () {
+            if (document.documentElement.scrollTop > 100) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+            });
+
+            btn.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        </script>
+
 
 </body>
 </html>
