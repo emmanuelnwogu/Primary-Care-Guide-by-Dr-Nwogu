@@ -42,6 +42,40 @@ header h1 {
   color: rgba(255,255,255,0.85);
 }
 
+.oncology-page {
+  background: #f4f6fb;
+}
+
+.oncology-page header {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+.oncology-page .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.oncology-page .card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #1e3a8a;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.25s;
+}
+
+.oncology-page .card:hover {
+  transform: translateY(-5px);
+}
+
 /* MAIN GRID */
 main {
   max-width: 1100px;
@@ -94,7 +128,7 @@ footer {
 </style>
 </head>
 
-<body>
+<body class="oncology-page">
 
 <header>
   <h1>Clinical Oncology Resources</h1>
