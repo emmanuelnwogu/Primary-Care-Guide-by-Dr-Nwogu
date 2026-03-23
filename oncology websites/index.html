@@ -1,49 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="photo.jpeg" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oncology</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        footer {
-            background-color: blue;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-                }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oncology Resources</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f4f6fb;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.divider {
+  width: 70px;
+  height: 2px;
+  background: rgba(255,255,255,0.7);
+  margin: 12px auto;
+}
+
+.subtitle {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  color: rgba(255,255,255,0.85);
+}
+
+/* MAIN GRID */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #1a1a1a;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: 0.25s;
+  border: 1px solid #e5e7eb;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* FOOTER */
+footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  font-size: 13px;
+}
+</style>
 </head>
 
 <body>
 
-    <header>
-        <h1>Clinical Oncology Reference Links</h1>
-    </header>
+<header>
+  <h1>Clinical Oncology Resources</h1>
+  <div class="divider"></div>
+  <p class="subtitle">Compiled by Dr Nwogu</p>
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="https://www.clatterbridgecc.nhs.uk/" target="_blank">The Clatterbridge Cancer Centre</a></li>
-            <li><a href="https://www.swagcanceralliance.nhs.uk/protocols/" target="_blank">SWAG Cancer Alliance</a></li>
-            <li><a href="https://oncologypro.esmo.org/" target="_blank">ESMO Oncology PRO</a></li>
-            <li><a href="https://www.ioclinicalnetwork.co.uk/" target="_blank">IOCN(The Immuno-Oncology Clinical Network)</a></li>
-            <li><a href="https://www.ukons.org/" target="_blank">UKONS(UK Oncology Nursing Society)</a></li>
-            <li><a href="https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5_Quick_Reference_8.5x11.pdf" target="_blank">CTCAE(Common Terminology Criteria 
-                for Adverse Events)</a></li>
-            <li><a href="https://jnccn.org/" target="_blank">JNCCN(Journal of the National Comprehensive Cancer Network)</a></li>
-            <li><a href="https://www.cancer.gov/about-cancer/treatment" target="_blank">National Cancer Institute(NCI)</a></li>
-        </ul>
-    </nav>
+<main>
+  <section class="grid">
 
-    <footer>
-        <p>Compiled by Emmanuel Nwogu MD,DRCOG,MRCGP</p>
-    </footer>
+    <a href="https://www.clatterbridgecc.nhs.uk/" target="_blank" class="card">
+      <h3>Clatterbridge Cancer Centre</h3>
+      <p>Specialist oncology centre resources</p>
+    </a>
+
+    <a href="https://www.swagcanceralliance.nhs.uk/protocols/" target="_blank" class="card">
+      <h3>SWAG Cancer Alliance</h3>
+      <p>Cancer treatment protocols</p>
+    </a>
+
+    <a href="https://oncologypro.esmo.org/" target="_blank" class="card">
+      <h3>ESMO Oncology PRO</h3>
+      <p>European oncology guidelines</p>
+    </a>
+
+    <a href="https://www.ioclinicalnetwork.co.uk/" target="_blank" class="card">
+      <h3>IOCN</h3>
+      <p>Immuno-oncology clinical network</p>
+    </a>
+
+    <a href="https://www.ukons.org/" target="_blank" class="card">
+      <h3>UKONS</h3>
+      <p>Oncology nursing society guidance</p>
+    </a>
+
+    <a href="https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/CTCAE_v5_Quick_Reference_8.5x11.pdf" target="_blank" class="card">
+      <h3>CTCAE</h3>
+      <p>Adverse event classification system</p>
+    </a>
+
+    <a href="https://jnccn.org/" target="_blank" class="card">
+      <h3>JNCCN</h3>
+      <p>National Comprehensive Cancer Network journal</p>
+    </a>
+
+    <a href="https://www.cancer.gov/about-cancer/treatment" target="_blank" class="card">
+      <h3>NCI</h3>
+      <p>National Cancer Institute resources</p>
+    </a>
+
+  </section>
+</main>
+
+<footer>
+  Disclaimer: This website provides guideline-based information for educational and quick reference purposes. It does not replace clinical judgement or local and national guidance.
+</footer>
 
 </body>
-
 </html>
