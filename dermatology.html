@@ -1,32 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Dermatology Resources</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="html" href="index.html">
-</head>
-<body style="background-color:rgba(250, 235, 215, 0.637)">
-        <header>
-                <h1 class="topic-heading">Dermatology Resources</h1>
-        </header>
-        
-        <main>
-                <div class="topic-heading">
-                        <ul>
-                                <li><a href="https://www.bad.org.uk/guidelines-and-standards/clinical-guidelines/" target="_blank">BAD(British Association of Dermatologists) Guidelines</a> </li>
-                                <li><a href="https://www.pcds.org.uk/" target="_blank">Primary Care Dermatology Society UK</a> </li>
-                                <li><a href="https://www.nihr.ac.uk/" target="_blank">NIHR,UK(National Institute of Health and Research)</a> </li>
-                                <li><a href="https://www.blackandbrownskin.co.uk/" target="_blank">Black and Brown Skin</a> </li>     
-                                <li><a href="https://skin.cochrane.org/" target="_blank">Cochrane Skin</a> </li>
-                                <li><a href="https://dermnetnz.org/" target="_blank">DermNet</a> </li>
-                                <li><a href="https://www.msdmanuals.com/professional" target="_blank">MSD Manual</a> </li>
-                        </ul>
-                </div>
-        </main>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dermatology Resources</title>
 
-        <footer>Disclaimer: The guidelines on this website are culled from already existing diagnostic and treatment guidelines.This is solely for educational purposes and for the purpose of quick referencing during consultations.</footer>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: rgba(250, 235, 215, 0.6);
+      color: #1a1a1a;
+    }
+
+    header {
+      background: #5f9ea0;
+      padding: 25px;
+      text-align: center;
+      color: white;
+    }
+
+    .subtitle {
+        margin-top: 6px;
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 0.85;
+        letter-spacing: 0.5px;
+        color: rgba(255,255,255,0.85);
+     }
+
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 0.5px;
+    }
+
+    header h1 {
+        font-size: 34px;
+        font-weight: 600;
+        letter-spacing: 0.6px;
+        margin: 0;
+        color: white;
+        }
+
+    .divider {
+        width: 70px;
+        height: 2px;
+        background: rgba(255,255,255,0.6);
+        margin: 10px auto 0 auto;
+        border-radius: 2px;
+        }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      text-decoration: none;
+      color: #1a1a1a;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: all 0.25s ease;
+      border: 1px solid #e5e5e5;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #0a3d62;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    footer {
+      background: #d6f5f5;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      margin-top: 40px;
+    }
+
+    /* Mobile polish */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Dermatology Resources</h1>
+  <div class="divider"></div>
+  <p class="subtitle">Compiled by Dr Nwogu</p>
+</header>
+
+<main>
+  <section class="grid-container">
+
+    <a href="https://www.bad.org.uk/guidelines-and-standards/clinical-guidelines/" target="_blank" class="card">
+      <h3>BAD Guidelines</h3>
+      <p>British Association of Dermatologists clinical guidance</p>
+    </a>
+
+    <a href="https://www.pcds.org.uk/" target="_blank" class="card">
+      <h3>Primary Care Dermatology Society</h3>
+      <p>Primary care dermatology resources</p>
+    </a>
+
+    <a href="https://www.nihr.ac.uk/" target="_blank" class="card">
+      <h3>NIHR</h3>
+      <p>Evidence-based healthcare and research</p>
+    </a>
+
+    <a href="https://www.blackandbrownskin.co.uk/" target="_blank" class="card">
+      <h3>Black & Brown Skin</h3>
+      <p>Dermatology in skin of colour</p>
+    </a>
+
+    <a href="https://skin.cochrane.org/" target="_blank" class="card">
+      <h3>Cochrane Skin</h3>
+      <p>Systematic reviews in dermatology</p>
+    </a>
+
+    <a href="https://dermnetnz.org/" target="_blank" class="card">
+      <h3>DermNet</h3>
+      <p>Comprehensive dermatology reference</p>
+    </a>
+
+    <a href="https://www.msdmanuals.com/professional" target="_blank" class="card">
+      <h3>MSD Manual</h3>
+      <p>Professional clinical dermatology guide</p>
+    </a>
+
+  </section>
+</main>
+
+<footer>
+  Disclaimer: This website provides guideline-based information for educational and quick reference purposes. It does not replace clinical judgement or local and national guidance.
+</footer>
 
 </body>
 </html>
