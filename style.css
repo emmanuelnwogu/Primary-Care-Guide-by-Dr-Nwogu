@@ -70,13 +70,13 @@ header h3 {
   border: 1px solid #333;
   background-color: bisque;
   width: 100%;
-  max-width: 900px;
+  max-width: var(--content-width);
   border-radius: 6px;
 }
 
 .topic-heading img {
   width: 100%;
-  max-width: 900px;
+  max-width: var(--content-width);
   display: block;
   margin: 0 auto;
   border-radius: 8px;
