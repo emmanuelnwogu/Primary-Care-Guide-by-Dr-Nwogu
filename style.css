@@ -236,17 +236,29 @@ footer{
 
 
 
-.back-to-top{
-    position:fixed;
-    bottom: 5rem;
-    right:3rem;
-    background-color:green;
-    border-radius:30%;
-    font-size: 30px;
-    font-weight: 400;
-    padding:5 2 5 3;
-    text-decoration: none;
-}
+#backToTop {
+    position: fixed;
+    bottom: 28px;
+    right: 20px;
+    z-index: 999;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #4a9a8f;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    transition: background 0.2s;
+  }
+
+  #backToTop:hover {
+    background-color: #e62ec7;
+  }
 
 
 

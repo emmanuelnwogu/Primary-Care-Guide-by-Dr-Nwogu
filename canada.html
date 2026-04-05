@@ -9,214 +9,230 @@
 <title>Canada Resources</title>
 
 <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-        margin: 0;
+        border-top: 5px solid #1a3d7c;
         font-family: Arial, sans-serif;
-        background-color: #fafafa;
+        background-color: #f1f1f1;
     }
 
     header {
-        background-color: #1a3d7c;
-        color: white;
-        padding: 10px 30px;
+        background-color: #f5f0e8;
+        border: 2px solid #2a2a2a;
+        border-radius: 12px;
+        margin: 20px;
+        padding: 20px 30px;
+        text-align: center;
     }
 
-    h1 {
-        margin: 0 0 15px 0;
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      color: #1a1a2e;
+      margin-bottom: 6px;
     }
 
-    .page-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin: 0 0 15px 0;
-     }
-
-.subtitle {
-    display: block;
-    font-size: 14px;
-    font-style: italic;
-    font-family: "Georgia", "Times New Roman", serif;
-    opacity: 0.85;
-    margin-top: 4px;
-}
-
-    .nav-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
+    header .subtitle {
+      font-size: 14px;
+      color: #555;
+      font-style: italic;
+      display: block;
     }
 
-    .nav-column {
-        min-width: 200px;
+    .infobar {
+      background-color: #cce8f4;
+      border-left: 4px solid #1a3d7c;
+      border-radius: 0 8px 8px 0;
+      margin: 0 20px 20px;
+      padding: 14px 18px;
+      font-size: 13px;
+      color: #1a3d7c;
+      font-style: italic;
+      text-align: center;
     }
 
-    .nav-column h3 {
-        margin-bottom: 10px;
-        font-size: 16px;
-        border-bottom: 1px solid rgba(255,255,255,0.3);
-        padding-bottom: 5px;
+    .teal-wrap {
+      background-color: #5f9ea0;
+      border-radius: 12px;
+      margin: 0 20px 30px;
+      padding: 20px;
     }
 
-    .nav-column ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
 
-    .nav-column li {
-        margin-bottom: 6px;
+    .nav-card {
+      background-color: #4a8a8a;
+      border-radius: 8px;
+      padding: 0;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: background 0.2s;border 0.2s;
+      cursor: pointer;
+      list-style: none;
     }
 
-    .nav-column a {
+    .nav-card:hover {
+      background-color: #ffffff;
+      border: 2px solid #1a1a2e;
+    }
+
+    .nav-card a {
         color: #ffffff;
         text-decoration: none;
-        font-size: 14px;
-        transition: all 0.2s ease;
-    }
-
-    .nav-column a:hover {
-        text-decoration: underline;
-    }
-
-    main {
-        padding: 30px;
-    }
-
-    .section {
-        background: white;
-        padding: 20px;
-        margin-bottom: 25px;
-        border-radius: 10px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-    }
-
-    .section h2 {
-        color: #1a3d7c;
-    }
-
-    .section img {
-        width: 100%;
-        margin-top: 15px;
-        border-radius: 6px;
-    }
-
-    .resource-link {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 8px 14px;
-        background-color: #e41a56;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: 600;
-        font-size: 14px;
-    }
-
-.resource-link:hover {
-  background-color: #2a5bb5;
-    }
-
-    #backToTop {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;   /* ensures bottom-right */
-        z-index: 999;
-        font-size: 18px;
-        background-color: #34e26e;   /* light grey like your screenshot */
-        color: #333;
-        border: none;
-        border-radius: 50%;
-        padding: 10px 12px;
-        cursor: pointer;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-        display: none;   /* hidden until scroll */
-        }
-
-    #backToTop {
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
+        font-size: 13px;
+        font-family: 'Merriweather', serif;
+        font-weight: 700;
         display: flex;
         align-items: center;
         justify-content: center;
-        }
+        width: 100%;
+        height: 100%;
+        min-height: 55px;
+        padding: 16px 12px;
+        transition: color 0.2s;
+        box-sizing: border-box;
+    }
 
-        #backToTop:hover {
-        background-color: #ddd;
-        }
+    .nav-card a:hover {
+      color: #1a1a2e;
+      text-decoration: none;
+      
+    }
+
+    main {
+      padding: 0 20px 40px;
+    }
+
+    .section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      border-left: 5px solid #4a9a8f;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .section h2 {
+      color: #4a8a8a;
+      margin-bottom: 14px;
+      font-size: 24px;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      border-bottom: 2px solid #4a8a8a;
+    }
+
+    .section img {
+      width: 100%;
+      margin-top: 15px;
+      border-radius: 6px;
+    }
+
+    .resource-link {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 18px;
+      background-color: #4a9a8f;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+
+    .resource-link:hover {
+      background-color: #2e6d6a;
+    }
+
+    footer {
+      background-color: #1a3d7c;
+      border-radius: 8px;
+      margin: 0 20px 30px;
+      padding: 14px 20px;
+      text-align: center;
+      font-size: 12px;
+      color: rgba(255,255,255,0.85);
+      font-style: italic;
+    }
+
+    #backToTop {
+      position: fixed;
+      bottom: 28px;
+      right: 20px;
+      z-index: 999;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: #4a9a8f;
+      color: white;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      transition: background 0.2s;
+    }
+
+    #backToTop:hover {
+      background-color: #2e6d6a;
+    }
 
     
     </style>
+
+    <!-- Add this in your <head> before </head> -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <h1 class="page-title">
-            Canada Resources
-            <span class="subtitle">compiled by Dr Nwogu</span>
-        </h1>
+    <h1>Canada Guidelines and Resources
+      <span class="subtitle">compiled by Dr Nwogu</span>
+    </h1>
+  </header>
 
-        <div class="nav-container">
+  <div class="infobar">
+    Please correlate all information with your local Trust or regional guidelines
+    and ensure use of the most up to date recommendations.
+  </div>
 
-            <!-- Column 1 -->
-            <div class="nav-column">
-                <h3>Clinical Pathways AND AI Tools</h3>
-                <ul>
-                    <li><a href="https://pathwaysbc.ca/login" target="_blank">Pathways.ca</a></li>
-                    <li><a href="https://chatgpt.com/" target="_blank">Open AI(ChatGPT) </a> </li>
-                    <li><a href="https://scribe.heidihealth.com/" target="_blank">Heidi Scribe</a></li>
-                    <li><a href="https://app.tali.ai/" target="_blank">Tali AI Scribe</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 2 -->
-            <div class="nav-column">
-                <h3>Lifestyle</h3>
-                <ul>
-                    <li><a href="https://www.lifestylerx.io" target="_blank">LifestyleRx</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 3 -->
-            <div class="nav-column">
-                <h3>System Access</h3>
-                <ul>
-                    <li><a href="#">PowerChart</a></li>
-                    <li><a href="https://medinet.ca/pharmanet/" target="_blank">PharmaNet</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 4 -->
-            <div class="nav-column">
-                <h3>Professional</h3>
-                <ul>
-                    <li><a href="https://www.doctorsofbc.ca/" target="_blank">Doctors of BC</a></li>
-                    <li><a href="https://www.bcfamilydocs.ca" target="_blank">BC Family Doctors</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 5 -->
-            <div class="nav-column">
-                <h3>Guidelines</h3>
-                <ul>
-                    <li><a href="https://www.uptodate.com/login" target="_blank">UpToDate</a></li>
-                    <li><a href="https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/bc-guidelines" target="_blank">BC Guidelines</a></li>
-                    <li><a href="https://peerevidence.ca/simplified-guidelines/" target="_blank">PEER Evidence</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 6 -->
-            <div class="nav-column">
-                <h3>Prescribing</h3>
-                <ul>
-                    <li><a href="https://www.bugsanddrugs.org/" target="_blank">Bugs & Drugs</a></li>
-                    <li><a href="https://pricingdoc.acfp.ca/" target="_blank">Medication Costs(Alberta CFP)</a></li>
-                </ul>
-            </div>
-
-        </div>
-    </header>
+  <div class="teal-wrap">
+    <div class="card-grid">
+      <nav>
+        <ul class="card-grid">
+            <li class="nav-card"><a href="https://www.uptodate.com/login" target="_blank">UpToDate</a></li>
+            <li class="nav-card"><a href="https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/bc-guidelines" target="_blank">BC Guidelines</a></li>
+            <li class="nav-card"><a href="https://www.bugsanddrugs.org/" target="_blank">Bugs and Drugs</a></li>
+            <li class="nav-card"><a href="https://reference.medscape.com/" target="_blank">Medscape</a></li>
+            <li class="nav-card"><a href="https://pathwaysbc.ca/login" target="_blank">Pathways.ca</a></li>
+            <li class="nav-card"><a href="https://peerevidence.ca/simplified-guidelines/" target="_blank">PEER Evidence</a></li>
+            <li class="nav-card"><a href="https://medinet.ca/pharmanet/" target="_blank">PharmaNet</a></li>
+            <li class="nav-card"><a href="https://www.doctorsofbc.ca/" target="_blank">Doctors of BC</a></li>
+            <li class="nav-card"><a href="https://www.bcfamilydocs.ca" target="_blank">BC Family Doctors</a></li>
+            <li class="nav-card"><a href="https://www.lifestylerx.io" target="_blank">LifestyleRx</a></li>
+            <li class="nav-card"><a href="https://pricingdoc.acfp.ca/" target="_blank">Medication Costs (Alberta CFP)</a></li>
+            <li class="nav-card"><a href="https://scribe.heidihealth.com/" target="_blank">Heidi Scribe</a></li>
+            <li class="nav-card"><a href="https://app.tali.ai/" target="_blank">Tali AI Scribe</a></li>
+            <li class="nav-card"><a href="https://claude.ai/" target="_blank">Claude AI</a></li>
+            <li class="nav-card"><a href="https://chatgpt.com/" target="_blank">Open AI (ChatGPT)</a></li>
+        </ul>
+  </nav>
+    </div>
+  </div>
 
 <main>
 
@@ -515,4 +531,6 @@
 
 
 </body>
+
+
 </html>
